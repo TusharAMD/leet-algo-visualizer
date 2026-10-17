@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { HomePage } from './pages/HomePage';
 import { ProblemPage } from './pages/ProblemPage';
@@ -8,7 +8,7 @@ export const App: React.FC = () => {
   const [uiScale, setUiScale] = useState<number>(0.9); // Default 90% for clean screen fit
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="h-screen w-screen overflow-hidden flex flex-col bg-slate-950 text-slate-100 select-none">
         <Navbar uiScale={uiScale} setUiScale={setUiScale} />
 
@@ -23,7 +23,7 @@ export const App: React.FC = () => {
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
