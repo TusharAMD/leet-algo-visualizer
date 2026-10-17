@@ -1,0 +1,151 @@
+Problem No,Name,Status
+217,Contains Duplicate,Todo
+242,Valid Anagram,Todo
+1,Two Sum,Todo
+49,Group Anagrams,Todo
+347,Top K Frequent Elements,Todo
+271,Encode and Decode Strings,Todo
+238,Product of Array Except Self,Todo
+36,Valid Sudoku,Todo
+128,Longest Consecutive Sequence,Todo
+125,Valid Palindrome,Todo
+167,Two Sum II - Input Array Is Sorted,Todo
+15,3Sum,Todo
+11,Container With Most Water,Todo
+42,Trapping Rain Water,Todo
+121,Best Time to Buy and Sell Stock,Todo
+3,Longest Substring Without Repeating Characters,Todo
+424,Longest Repeating Character Replacement,Todo
+567,Permutation in String,Todo
+76,Minimum Window Substring,Todo
+239,Sliding Window Maximum,Todo
+20,Valid Parentheses,Todo
+155,Min Stack,Todo
+150,Evaluate Reverse Polish Notation,Todo
+22,Generate Parentheses,Todo
+739,Daily Temperatures,Todo
+853,Car Fleet,Todo
+84,Largest Rectangle in Histogram,Todo
+704,Binary Search,Todo
+74,Search a 2D Matrix,Todo
+875,Koko Eating Bananas,Todo
+153,Find Minimum in Rotated Sorted Array,Todo
+33,Search in Rotated Sorted Array,Todo
+981,Time Based Key-Value Store,Todo
+4,Median of Two Sorted Arrays,Todo
+206,Reverse Linked List,Todo
+21,Merge Two Sorted Lists,Todo
+141,Linked List Cycle,Todo
+143,Reorder List,Todo
+19,Remove Nth Node From End of List,Todo
+138,Copy List with Random Pointer,Todo
+2,Add Two Numbers,Todo
+287,Find the Duplicate Number,Todo
+146,LRU Cache,Todo
+23,Merge k Sorted Lists,Todo
+25,Reverse Nodes in k-Group,Todo
+226,Invert Binary Tree,Todo
+104,Maximum Depth of Binary Tree,Todo
+543,Diameter of Binary Tree,Todo
+110,Balanced Binary Tree,Todo
+100,Same Tree,Todo
+572,Subtree of Another Tree,Todo
+235,Lowest Common Ancestor of a Binary Search Tree,Todo
+102,Binary Tree Level Order Traversal,Todo
+199,Binary Tree Right Side View,Todo
+1448,Count Good Nodes in Binary Tree,Todo
+98,Validate Binary Search Tree,Todo
+230,Kth Smallest Element in a BST,Todo
+105,Construct Binary Tree from Preorder and Inorder Traversal,Todo
+124,Binary Tree Maximum Path Sum,Todo
+297,Serialize and Deserialize Binary Tree,Todo
+208,Implement Trie (Prefix Tree),Todo
+211,Design Add and Search Words Data Structure,Todo
+212,Word Search II,Todo
+703,Kth Largest Element in a Stream,Todo
+1046,Last Stone Weight,Todo
+973,K Closest Points to Origin,Todo
+215,Kth Largest Element in an Array,Todo
+621,Task Scheduler,Todo
+355,Design Twitter,Todo
+295,Find Median from Data Stream,Todo
+78,Subsets,Todo
+39,Combination Sum,Todo
+46,Permutations,Todo
+90,Subsets II,Todo
+40,Combination Sum II,Todo
+79,Word Search,Todo
+131,Palindrome Partitioning,Todo
+17,Letter Combinations of a Phone Number,Todo
+51,N-Queens,Todo
+200,Number of Islands,Todo
+133,Clone Graph,Todo
+695,Max Area of Island,Todo
+417,Pacific Atlantic Water Flow,Todo
+130,Surrounded Regions,Todo
+994,Rotting Oranges,Todo
+286,Walls and Gates,Todo
+207,Course Schedule,Todo
+210,Course Schedule II,Todo
+684,Redundant Connection,Todo
+261,Graph Valid Tree,Todo
+323,Number of Connected Components in an Undirected Graph,Todo
+127,Word Ladder,Todo
+332,Reconstruct Itinerary,Todo
+1584,Min Cost to Connect All Points,Todo
+743,Network Delay Time,Todo
+787,Cheapest Flights Within K Stops,Todo
+778,Swim in Rising Water,Todo
+269,Alien Dictionary,Todo
+70,Climbing Stairs,Todo
+746,Min Cost Climbing Stairs,Todo
+198,House Robber,Todo
+213,House Robber II,Todo
+5,Longest Palindromic Substring,Todo
+647,Palindromic Substrings,Todo
+91,Decode Ways,Todo
+322,Coin Change,Todo
+152,Maximum Product Subarray,Todo
+139,Word Break,Todo
+300,Longest Increasing Subsequence,Todo
+416,Partition Equal Subset Sum,Todo
+62,Unique Paths,Todo
+1143,Longest Common Subsequence,Todo
+309,Best Time to Buy and Sell Stock with Cooldown,Todo
+518,Coin Change II,Todo
+494,Target Sum,Todo
+97,Interleaving String,Todo
+329,Longest Increasing Path in a Matrix,Todo
+115,Distinct Subsequences,Todo
+72,Edit Distance,Todo
+312,Burst Balloons,Todo
+10,Regular Expression Matching,Todo
+53,Maximum Subarray,Todo
+55,Jump Game,Todo
+45,Jump Game II,Todo
+134,Gas Station,Todo
+846,Hand of Straights,Todo
+1899,Merge Triplets to Form Target Triplet,Todo
+763,Partition Labels,Todo
+678,Valid Parenthesis String,Todo
+57,Insert Interval,Todo
+56,Merge Intervals,Todo
+435,Non-overlapping Intervals,Todo
+252,Meeting Rooms,Todo
+253,Meeting Rooms II,Todo
+1851,Minimum Interval to Include Each Query,Todo
+48,Rotate Image,Todo
+54,Spiral Matrix,Todo
+73,Set Matrix Zeroes,Todo
+202,Happy Number,Todo
+66,Plus One,Todo
+50,Pow(x, n),Todo
+43,Multiply Strings,Todo
+2013,Detect Squares,Todo
+136,Single Number,Todo
+191,Number of 1 Bits,Todo
+338,Counting Bits,Todo
+190,Reverse Bits,Todo
+268,Missing Number,Todo
+371,Sum of Two Integers,Todo
+7,Reverse Integer,Todo

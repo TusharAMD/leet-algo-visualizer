@@ -9,7 +9,7 @@ export const HomePage: React.FC = () => {
 
   const categories = [
     'All',
-    'Dynamic Programming',
+    'Arrays & Hashing',
     'Two Pointers',
     'Sliding Window',
     'Stack',
@@ -17,7 +17,8 @@ export const HomePage: React.FC = () => {
     'Linked List',
     'Trees',
     'Backtracking',
-    'Graphs'
+    'Graphs',
+    'Dynamic Programming'
   ];
 
   const filteredProblems = TOP_20_PROBLEMS.filter((p) => {
@@ -43,7 +44,7 @@ export const HomePage: React.FC = () => {
               NeetCode 150 Core Curriculum
             </span>
             <span className="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center gap-1">
-              <CheckCircle2 className="w-3.5 h-3.5" /> {liveCount} Live Interactive Engine
+              <CheckCircle2 className="w-3.5 h-3.5" /> {liveCount} Visualizers Live!
             </span>
           </div>
 

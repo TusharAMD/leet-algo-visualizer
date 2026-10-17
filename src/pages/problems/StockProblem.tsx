@@ -1,0 +1,117 @@
+import React, { useState, useMemo, useEffect } from 'react';
+import confetti from 'canvas-confetti';
+import { generateStockSteps, STOCK_CODE_LINES } from '../../algorithms/stockProfitIntuitive';
+import { StockInputPanel } from '../../components/stock/StockInputPanel';
+import { StockViewer } from '../../components/stock/StockViewer';
+import { CodeViewer } from '../../components/CodeViewer';
+import { ControlBar } from '../../components/ControlBar';
+
+interface StockProblemProps {
+  uiScale: number;
+}
+
+export const StockProblem: React.FC<StockProblemProps> = ({ uiScale }) => {
+  const [prices, setPrices] = useState<number[]>([7, 1, 5, 3, 6, 4]);
+  const [currentStepIndex, setCurrentStepIndex] = useState<number>(0);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [speed, setSpeed] = useState<number>(1);
+
+  const steps = useMemo(() => {
+    return generateStockSteps(prices);
+  }, [prices]);
+
+  const currentStep = steps[Math.min(currentStepIndex, steps.length - 1)] || steps[0];
+
+  useEffect(() => {
+    setCurrentStepIndex(0);
+    setIsPlaying(false);
+  }, [prices]);
+
+  useEffect(() => {
+    if (!isPlaying) return;
+
+    const intervalTime = Math.max(300, 1200 / speed);
+    const timer = setInterval(() => {
+      setCurrentStepIndex((prev) => {
+        if (prev >= steps.length - 1) {
+          setIsPlaying(false);
+          const lastStep = steps[steps.length - 1];
+          if (lastStep && lastStep.isComplete && lastStep.maxProfit > 0) {
+            confetti({
+              particleCount: 80,
+              spread: 65,
+              origin: { y: 0.7 }
+            });
+          }
+          return prev;
+        }
+        return prev + 1;
+      });
+    }, intervalTime);
+
+    return () => clearInterval(timer);
+  }, [isPlaying, speed, steps]);
+
+  const handleNext = () => {
+    if (currentStepIndex < steps.length - 1) {
+      setCurrentStepIndex((prev) => prev + 1);
+    }
+  };
+
+  const handlePrev = () => {
+    if (currentStepIndex > 0) {
+      setCurrentStepIndex((prev) => prev - 1);
+    }
+  };
+
+  const handleReset = () => {
+    setCurrentStepIndex(0);
+    setIsPlaying(false);
+  };
+
+  const handleResetToDefaults = () => {
+    setPrices([7, 1, 5, 3, 6, 4]);
+  };
+
+  return (
+    <div
+      className="flex-1 min-h-0 flex flex-col p-2.5 max-w-7xl w-full mx-auto gap-2 overflow-hidden"
+      style={{ zoom: uiScale }}
+    >
+      <StockInputPanel
+        prices={prices}
+        setPrices={setPrices}
+        onResetToDefaults={handleResetToDefaults}
+      />
+
+      <div className="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-12 gap-2.5">
+        <div className="lg:col-span-8 flex flex-col min-h-0 h-full">
+          <StockViewer step={currentStep} prices={prices} />
+        </div>
+        <div className="lg:col-span-4 flex flex-col min-h-0 h-full">
+          <CodeViewer
+            lines={STOCK_CODE_LINES}
+            activeLine={currentStep.codeLine}
+            variableBadges={currentStep.variableBadges}
+          />
+        </div>
+      </div>
+
+      <ControlBar
+        currentStep={currentStepIndex}
+        totalSteps={steps.length}
+        isPlaying={isPlaying}
+        onPlayPause={() => setIsPlaying(!isPlaying)}
+        onNext={handleNext}
+        onPrev={handlePrev}
+        onReset={handleReset}
+        onJumpTo={(step) => {
+          setCurrentStepIndex(step);
+          setIsPlaying(false);
+        }}
+        speed={speed}
+        setSpeed={setSpeed}
+      />
+    </div>
+  );
+};
