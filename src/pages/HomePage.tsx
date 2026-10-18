@@ -16,9 +16,15 @@ export const HomePage: React.FC = () => {
     'Binary Search',
     'Linked List',
     'Trees',
+    'Tries',
+    'Heap / Priority Queue',
     'Backtracking',
     'Graphs',
-    'Dynamic Programming'
+    'Dynamic Programming',
+    'Intervals',
+    'Greedy',
+    'Math & Geometry',
+    'Bit Manipulation'
   ];
 
   const filteredProblems = TOP_20_PROBLEMS.filter((p) => {
@@ -57,7 +63,7 @@ export const HomePage: React.FC = () => {
 
           <p className="text-xs md:text-sm text-slate-300 leading-relaxed">
             Instead of abstract graph dots or cryptic variable lines, each visualizer renders the
-            <strong> exact human decision story</strong> behind the problem. Master these 20 canonical archetypes and 80% of LeetCode patterns click instantly.
+            <strong> exact human decision story</strong> behind the problem. Master all 150 problems with synchronized code, active memory panels, and zero vertical scroll.
           </p>
         </div>
 

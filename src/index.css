@@ -27,3 +27,23 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #334155;
 }
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Mobile responsive visualizer behavior */
+@media (max-width: 1023px) {
+  /* On mobile and tablets, allow visualizer container to scroll naturally instead of hard clipping */
+  .problem-container-responsive {
+    overflow-y: auto !important;
+    height: auto !important;
+    min-height: 100% !important;
+    padding-bottom: 2rem !important;
+  }
+}

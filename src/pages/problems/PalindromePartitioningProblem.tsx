@@ -82,7 +82,7 @@ export const PalindromePartitioningProblem: React.FC<PalindromePartitioningProbl
 
   return (
     <div
-      className="flex-1 min-h-0 flex flex-col p-2.5 max-w-7xl w-full mx-auto gap-2 overflow-hidden"
+      className="flex-1 min-h-0 flex flex-col p-2 sm:p-2.5 max-w-7xl w-full mx-auto gap-2 overflow-y-auto lg:overflow-hidden problem-container-responsive"
       style={{ zoom: uiScale }}
     >
       {/* Interactive Controls Bar */}
