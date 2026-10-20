@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { HomePage } from './pages/HomePage';
 import { ProblemPage } from './pages/ProblemPage';
+import { LandscapeOrientationPrompt } from './components/LandscapeOrientationPrompt';
 
 export const App: React.FC = () => {
   const [uiScale, setUiScale] = useState<number>(0.9); // Default 90% for clean screen fit
@@ -10,6 +11,7 @@ export const App: React.FC = () => {
   return (
     <HashRouter>
       <div className="h-screen w-screen overflow-hidden flex flex-col bg-slate-950 text-slate-100 select-none">
+        <LandscapeOrientationPrompt />
         <Navbar uiScale={uiScale} setUiScale={setUiScale} />
 
         <div className="flex-1 min-h-0 flex flex-col overflow-hidden">

@@ -16,9 +16,15 @@ export const HomePage: React.FC = () => {
     'Binary Search',
     'Linked List',
     'Trees',
+    'Tries',
+    'Heap / Priority Queue',
     'Backtracking',
     'Graphs',
-    'Dynamic Programming'
+    'Dynamic Programming',
+    'Intervals',
+    'Greedy',
+    'Math & Geometry',
+    'Bit Manipulation'
   ];
 
   const filteredProblems = TOP_20_PROBLEMS.filter((p) => {
